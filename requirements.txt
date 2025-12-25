@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scipy
+statsmodels
+pmdarima
+scikit-learn
+tqdm
+xgboost
+pandas-ta
