@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (do not upload big data)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+
+# Models / outputs
+*.pkl
+*.joblib
+
+# IDE
+.vscode/
+.idea/
