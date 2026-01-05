@@ -79,14 +79,14 @@ jupyter lab
 # then open notebooks/*.ipynb
 ```
 
-> If you keep your CSV data locally, put them under `data/raw/` and update the file paths inside notebooks.
+> If you keep your CSV data locally, put them under `data/processed/` and update the file paths inside notebooks.
 
 ---
 
 ## Reproducibility & Data Policy
 
 This repo intentionally does **not** upload full datasets.  
-If you want to provide a tiny sample for reviewers, place it in `data/sample/` (kept by `.gitignore` rules).
+If you want to provide a tiny sample, place it in `data/sample/` (kept by `.gitignore` rules).
 
 ---
 
