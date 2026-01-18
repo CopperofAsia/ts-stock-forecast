@@ -60,7 +60,7 @@ This repository contains a small research project on **stock price forecasting**
 - `notebooks/` — notebooks for ARIMA/SARIMA, baselines, and XGBoost pipelines
 - `reports/` — final report PDF
 - `figures/` — figures extracted from the report for README preview
-- `data/` — **not versioned** (keep only small samples under `data/sample/`)
+- `data/` — **not versioned** (only small samples under `data/sample/`)
 
 ---
 
@@ -72,14 +72,13 @@ This repository contains a small research project on **stock price forecasting**
 pip install -r requirements.txt
 ```
 
-### 2) Open notebooks
+### 2) Run
 
 ```bash
-jupyter lab
-# then open notebooks/*.ipynb
+python scripts/run_arima_single.py --csv data/sample/600028.csv --p 1 --d 1 --q 1
+python scripts/run_baselines_single.py --csv data/sample/600028.csv
+python scripts/run_xgb_single.py --csv data/sample/600028.csv --horizon 1
 ```
-
-> If you keep your CSV data locally, put them under `data/processed/` and update the file paths inside notebooks.
 
 ---
 
