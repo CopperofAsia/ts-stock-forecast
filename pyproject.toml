@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ts-stock-forecast"
+version = "0.1.0"
+description = "Time series stock forecasting utilities (ARIMA/SARIMA, baselines, XGBoost)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Justin Zhang"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]
