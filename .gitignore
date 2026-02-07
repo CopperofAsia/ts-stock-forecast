@@ -1,34 +1,76 @@
-# Python
+####################################
+# Python bytecode / cache
+####################################
 __pycache__/
 *.py[cod]
-*.egg-info/
-.venv/
+*$py.class
+
+####################################
+# Virtual environments
+####################################
+.env
+.venv
 venv/
+ENV/
 env/
+
+####################################
+# Jupyter Notebook
+####################################
 .ipynb_checkpoints/
 
-# Jupyter
-*.ipynb_checkpoints
-
-# OS / IDE
-.DS_Store
-Thumbs.db
+####################################
+# IDE / Editor settings
+####################################
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Data (keep small samples only)
+####################################
+# OS generated files
+####################################
+.DS_Store
+Thumbs.db
+
+####################################
+# Logs
+####################################
+*.log
+
+####################################
+# Data files
+####################################
 data/raw/
+data/interim/
 data/processed/
-data/**/*.parquet
-data/**/*.pkl
-# If you want to version small CSV samples, keep them under data/sample/
-data/**/*.csv
-!data/sample/**/*.csv
+data/tmp/
 
-# Outputs
+####################################
+# Model artifacts
+####################################
 models/
-outputs/
 *.joblib
-*.pkl
-*.png
-!figures/*.png
+*.pt
+*.pth
+
+####################################
+# Build / distribution
+####################################
+build/
+dist/
+*.egg-info/
+
+####################################
+# Testing / coverage
+####################################
+.pytest_cache/
+.coverage
+htmlcov/
+
+####################################
+# Environment & secrets
+####################################
+.env.*
+*.key
+*.pem
