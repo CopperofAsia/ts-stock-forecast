@@ -47,38 +47,30 @@ This repository contains a small research project on **stock price forecasting**
 
 ### ARIMA forecast example (from the report)
 
-![Report Page 7](figures/report_page_7.png)
+![Report Page 7](report/report_screen_shot/report_page_7.png)
 
 ### Data visualization & decomposition (from the report)
 
-![Report Page 2](figures/report_page_2.png)
+![Report Page 2](report/report_screen_shot/report_page_2.png)
 
 ---
 
 ## Repository Structure
 
-- `notebooks/` — notebooks for ARIMA/SARIMA, baselines, and XGBoost pipelines
-- `reports/` — final report PDF
-- `figures/` — figures extracted from the report for README preview
-- `data/` — **not versioned** (only small samples under `data/sample/`)
-
----
-
-## How to Run
-
-### 1) Create environment
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2) Run
-
-```bash
-python scripts/run_arima_single.py --csv data/sample/600028.csv --p 1 --d 1 --q 1
-python scripts/run_baselines_single.py --csv data/sample/600028.csv
-python scripts/run_xgb_single.py --csv data/sample/600028.csv --horizon 1
-```
+data/
+    raw/               # raw input csv(s)
+    processed/               # processed features (optional cache)
+    sample/               # sample data csv       
+outputs/
+    {sample}_run.py
+    {sample}_forecast
+notebooks/               # the original notebook
+reports/
+    figures/               # plots
+scripts/
+    train.py           # end-to-end training entrypoint
+    predict.py         # load a trained run and predict last row
+src/               # reusable package code
 
 ---
 

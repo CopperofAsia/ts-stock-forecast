@@ -12,7 +12,7 @@ DEFAULT_PRICE_COLS = ["open", "high", "low", "close", "volume"]
 
 def add_technical_features(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Add technical indicators and engineered features (mirrors the notebook).
+    Add technical indicators and engineered features.
     Expects a Date-indexed DataFrame containing at least open/high/low/close/volume.
     """
     out = df.copy()

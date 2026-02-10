@@ -87,9 +87,6 @@ def main() -> None:
     (outdir / "run_meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print("\nDone.")
-    print(f"- Metrics: {metrics_path}")
-    print(f"- Bundle:  {outdir / 'models.joblib'}")
-    print(f"- Plot:    {plot_file}")
 
 
 if __name__ == "__main__":

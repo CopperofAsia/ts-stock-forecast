@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import os
 import glob
 from pathlib import Path
 from typing import Union, List, Optional
