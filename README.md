@@ -47,11 +47,11 @@ This repository contains a small research project on **stock price forecasting**
 
 ### ARIMA forecast example (from the report)
 
-![Report Page 7](report/report_screen_shot/report_page_7.png)
+![Report Page 7](reports/report_screen_shot/report_page_7.png)
 
 ### Data visualization & decomposition (from the report)
 
-![Report Page 2](report/report_screen_shot/report_page_2.png)
+![Report Page 2](reports/report_screen_shot/report_page_2.png)
 
 ---
 

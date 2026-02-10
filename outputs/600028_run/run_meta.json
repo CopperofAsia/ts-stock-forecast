@@ -1,0 +1,13 @@
+{
+  "data": "data/sample/600028.csv",
+  "stock_id": null,
+  "index": 1,
+  "n_rows": 1159,
+  "date_min": "2020-12-14 00:00:00",
+  "date_max": "2025-09-19 00:00:00",
+  "outputs": {
+    "metrics_csv": "outputs\\600028_run\\metrics.csv",
+    "bundle": "outputs\\600028_run\\models.joblib",
+    "plot": "reports\\figures\\600028_run_predictions.png"
+  }
+}

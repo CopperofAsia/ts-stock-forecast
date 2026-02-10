@@ -49,8 +49,6 @@ data/tmp/
 ####################################
 # Model artifacts
 ####################################
-models/
-outputs/
 *.joblib
 *.pt
 *.pth
